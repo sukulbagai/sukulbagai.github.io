@@ -76,7 +76,7 @@
        Main Menu
     ::::::::::::::::::::::::::::::::::::*/
     .navbar.navbar-expand-lg.fixed-top {
-        position: static;
+        position: fixed;
         background-color: #000;
     }
     button.navbar-toggler {
@@ -96,6 +96,9 @@
     /*::::::::::::::::::::::::::::::::::::
        Hero Area
     ::::::::::::::::::::::::::::::::::::*/
+    .hero-aria {
+    	margin-top: 25%;
+    }
     .hero-aria,
     .hero-area-slids,
     .single-slider {
