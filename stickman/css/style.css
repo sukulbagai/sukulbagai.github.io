@@ -6170,6 +6170,10 @@ button.bg-dark:focus {
 .mx-4 {
   margin-right: 1.5rem !important; }
 
+p.mb-4 {
+  font-size: 15px;
+}
+
 .mb-4,
 .my-4 {
   margin-bottom: 1.5rem !important; }
@@ -7284,7 +7288,7 @@ body {
       -o-transform: translateX(0);
       transform: translateX(0);
       width: 270px;
-      background: #fff;
+      background: #F67E7C;
       z-index: 999;
       position: fixed; }
     body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
@@ -7466,7 +7470,7 @@ h1, h2, h3, h4, h5,
             text-decoration: none;
             outline: none;
             color: #000000;
-            background: #fff; }
+            background: #F67E7C; }
 
 #colorlib-main {
   width: 100%;
@@ -7668,7 +7672,7 @@ h1, h2, h3, h4, h5,
       color: #fff;
       font-size: 20px; }
     .photography-entry .text span.tag {
-      font-size: 12px;
+      font-size: 16px;
       text-transform: uppercase;
       letter-spacing: 2px;
       color: rgba(255, 255, 255, 0.8); }
@@ -8197,8 +8201,7 @@ textarea.form-control {
 .blog-img,
 .user-img {
   background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center; }
+  background-repeat: no-repeat; }
 
 .bg-light {
   background: #f8f9fa !important; }
