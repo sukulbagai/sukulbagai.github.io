@@ -33,14 +33,7 @@
     ============================*/
 
     $('.hero-area-slids').owlCarousel({
-        items: 1,
-        loop: true,
-        nav: false,
-        doots: false,
-        autoplay: true,
-        animateOut: 'fadeOutRight',
-        animateIn: 'fadeIn'
-
+        items: 1
     });
     //Wow Animation
     new WOW().init();

@@ -981,9 +981,10 @@ button:focus {
 }
 
 .blog-thumb {
-    height: 200px;
+    height: 280px;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 h4.blog-title {
