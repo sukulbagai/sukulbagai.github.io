@@ -83,6 +83,13 @@ img {
     height: auto;
 }
 
+@media screen and (max-width: 768px) {
+  .interactive-resume {
+    width: max-content;
+    margin-top: 1em;
+  }
+}
+
 .button {
     color: #fff;
     display: inline-block;
