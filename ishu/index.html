@@ -1,0 +1,376 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="confetti.js"></script>
+</head>
+
+<body onload="runConfetti()" class="d-flex flex-column min-vh-100" style="background-image: url('b1.png');background-repeat:no-repeat;background-attachment:fixed;background-size:cover;background-position:center">
+
+<audio autoplay id="myAudio">
+  <source src="song.mp3">
+</audio>
+
+<div class="container" >
+
+  <div class="alert alert-danger" role="alert" style="margin-top:20px">
+    <h2 style="text-align:center">
+      Ishu's Happpppyyyyyy Jar
+    </h2>
+    <h4>
+    Hey There, Cutie. Guess who's officially a year elder to me now? This is the only time I'm going to write Thank God for
+    Corona because those external forces made us connect, and in you I've found my best friend, my partner, my annoying little chu.
+    Keep jumping around & stay excited. You're the best for me, and will always be &#128536; HAPPPPYYYYYY BIRTHDAY!
+  </h4>
+  </div>
+
+  <div class="row" style="margin-top:50px">
+    <div class="col text-center">
+      <a href="#" class="btn btn-lg btn-success" data-toggle="modal" data-target="#Modal1" id="btn1" onclick="func1()">Moticational Quotes</a>
+    </div>
+  </div>
+
+  <div class="row" style="margin-top:20px">
+    <div class="col text-center">
+      <a href="#" class="btn btn-lg btn-warning" data-toggle="modal" data-target="#Modal2" id="btn2" onclick="func2()">Song Lyrics</a>
+    </div>
+  </div>
+
+  <div class="row" style="margin-top:20px">
+    <div class="col text-center">
+      <a href="#" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#Modal3" id="btn3" onclick="func3()">PJs</a>
+    </div>
+  </div>
+
+  <div class="row" style="margin-top:20px">
+    <div class="col text-center">
+      <a href="#" class="btn btn-lg btn-info" data-toggle="modal" data-target="#Modal4" id="btn4" onclick="func4()">Fun Facts</a>
+    </div>
+  </div>
+
+  <div class="row" style="margin-top:20px">
+    <div class="col text-center">
+      <a href="#" class="btn btn-lg btn-danger" data-toggle="modal" data-target="#Modal5" id="btn5" onclick="func5()">Moments Together</a>
+    </div>
+  </div>
+</div>
+
+  <!-- modal 1 -->
+  <div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-success">
+          <h4 class="modal-title bg-success" id="Modal1Label">Basic Modal</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body bg-success">
+          <h3 id="Modal1Content">Modal Body</h3>
+        </div>
+        <div class="modal-footer bg-success">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal 2 -->
+  <div class="modal fade" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-warning">
+          <h4 class="modal-title bg-warning" id="Modal2Label">Modal 2</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body bg-warning">
+          <h3 id="Modal2Content">Modal Body</h3>
+        </div>
+        <div class="modal-footer bg-warning">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal 3 -->
+  <div class="modal fade" id="Modal3" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-primary">
+          <h4 class="modal-title bg-primary" id="Modal3Label">Basic Modal 3</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body bg-primary">
+          <h3 id="Modal3Content">Modal Body</h3>
+        </div>
+        <div class="modal-footer bg-primary">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal 4 -->
+  <div class="modal fade" id="Modal4" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-info">
+          <h4 class="modal-title bg-info" id="Modal4Label">Basic Modal 3</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body bg-info">
+          <h3 id="Modal4Content">Modal Body</h3>
+        </div>
+        <div class="modal-footer bg-info">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal 5 -->
+  <div class="modal fade" id="Modal5" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-danger">
+          <h4 class="modal-title bg-danger" id="Modal5Label">Basic Modal 3</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body bg-danger">
+          <h3 id="Modal5Content">Modal Body</h3>
+        </div>
+        <div class="modal-footer bg-danger">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer mt-auto font-small" style="position:fixed;bottom:0;left:0;width:100%;background-color:black;padding:15px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6" style="color:white;">
+          <h3> Made with <i class="fa fa-heart" style="color:red"></i> by Suku
+        </div>
+        <div class="col-sm-3">
+          <button type="button" class="btn btn-lg btn-light" id="opt1" onclick="toggleConfetti()">Toggle Confetti</a>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" class="btn btn-lg btn-light" id="opt2" onclick="toggleMusic()">Toggle Music</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+
+  var myAudio = document.getElementById("myAudio");
+  var isPlaying = false;
+
+  function togglePlay() {
+    isPlaying ? myAudio.pause() : myAudio.play();
+  };
+
+  myAudio.onplaying = function() {
+    isPlaying = true;
+  };
+  myAudio.onpause = function() {
+    isPlaying = false;
+  };
+
+  var arr1 = [
+    'Whatever you are, be a good one',
+    'Do what(and who) you love to do',
+    'You only live once, but if you do it right, once is enough',
+    'Don’t do it tomorrow, do it today',
+    'Be yourself. Everyone else is already taken',
+    'When life gives you lemons, squirt someone in the eye',
+    'Be gentle and kind, for everyone is righting a battle you know nothing about',
+    'In order to be irreplaceable, one must always be different',
+    'Life isn’t about finding yourself, it’s about creating yourself',
+    'We cannot direct the wind but we can adjust the sails',
+    'Life is like riding a bicycle, in order to keep your balance, you must keep moving',
+    'Live your life. Take chances. Don’t wait. Because this is the oldest you’ve ever been and the youngest you’ll ever be again',
+    'Life isn’t about  waiting for the storm to pass, it’s about dancing in the rain',
+    'You decide who your are, not society',
+    'Accept no one’s definition of your life; define yourself',
+    'Why are you trying so hard to fit in when you were born to stand out?',
+    'Life is too short to be anything but happy',
+    'Enjoy the little things in life for someday you will realize they were the big things',
+    'Good friends are like stars, you don’t always see them but you know they’re always there',
+    'Imperfection is beauty. Madness is genius. And it’s better to be absolutely ridiculous than absolutely boring',
+    'Dance like no one is watching, sing like no one is listening and live each day like it’s your last'
+  ];
+
+  var arr2 = [
+    '"Every little thing gonna be alright!" - Bob Marley and the Wailers "Three Little Birds"',
+    '"I\'m a survivor. I\’m not gonna give up. I\’m not gonna stop. I’m gonna work harder." - Destiny\'s Child "Survivor"',
+    'I see trees of green, red roses too. I see them bloom for me and you. And I think to myself what a wonderful world - Louis Armstrong "What a Wonderful World"',
+    '"You are Beautiful, no matter what they say." - Christina Aguilera "Beautiful"',
+    '"Don’t you know that there ain’t no mountain high enough. Ain’t no valley low enough, ain’t no river wide enough. To keep me from getting to you, baby." – Marvin Gaye & Tammi Terrell "Ain’t No Mountain High Enough"',
+    '"It\'s my life and it\'s now or never! Cause I ain\'t gonna live forever, I just want live while I\'m alive It\'s my life!" - Bon Jovi "It\'s My Life"',
+    '"It’s a beautiful day. Don’t let it get away." - U2 "Beautiful Day"',
+    '"In every life we have some trouble. But when you worry, you make it double." - Bobby McFerrin"Don’t Worry be Happy"',
+    '"We are the world we are the children we are the ones who make a brighter day so let\'s start giving." - United Support of Artists for Africa "We Are The World"',
+    '"And if at first your don\'t succeed, then dust yourself off and try again!" - Aaliyah "Try Again"',
+    '"Don\'t give up. You\'ve got a reason to live  Can\'t forget you only get what you give." - New Radicals "You Get What You Give"',
+    'You own it, you better never let it go You only get one shot, do not miss your chance to blow. This opportunity comes once in a lifetime - Eminem “Lose Yourself”',
+    'So many times it happens too fast You trade your passion for glory Don\'t lose your grip on the dreams of the past You must fight just to keep them alive - Survivor “Eye of the tiger”',
+    '"Get up, stand up! Don’t give up the fight!" - Bob Marley "Get Up Stand Up"',
+    '"You may say I\'m a dreamer. But I\'m not the only one." - John Lennon "Imagine"',
+    '"No matter how hard it gets...stick your chest out, keep your head up and handle it." - Tupac "Me Against The World"',
+    '"Reach for the stars so if you fall...you land on the clouds." - Kanye West "Homecoming"',
+    '"Keep integrity at every cost." - Nas "Bridging The Gap"',
+    '"I learned working with the negatives can make for...better pictures." - Drake "HYFR"',
+    'Just because it burns doesn’t mean you’re gonna die. You’ve gotta get up and try - Pink',
+    'Just because I’m losing doesn’t mean I’m lost, doesn’t mean I’ll stop - Coldplay',
+    'Look at the stars, look how they shine for you and everything you do - Coldplay',
+    'A life with love is a life that\'s lived - Ed Sheehan “Supermarket Flowers”',
+    'My wish for you Is that this life becomes all that you want it to Your dreams stay big, your worries stay small - Rascal Flatt “My Wish”',
+    'Someday I\'ll wish upon a star And wake up where the clouds are far behind me. Where troubles melt like lemon drops, High above the chimney tops, That\'s where you\'ll find me. - E.Y. Harburg “SOMEWHERE OVER THE RAINBOW',
+    'Any day now, any day now I shall be released - Bob Dylan “I SHALL BE RELEASED"',
+    'When I get older, I will be stronger - K Naan “Wavin Flag”',
+    'When the day that lies ahead of me. Seems impossible to face Lovely Day – Bill Withers',
+    'No I won’t be afraid. Oh I won’t be afraid Stand By Me - Ben E. King',
+    'If life seems jolly rotten, there’s something you’ve forgotten! Always Look on the Bright Side of Life – Monty Python',
+    'Just a perfect day, problems all left alone Perfect Day – Lou Reed',
+    'You’re beautiful. No matter what they say Beautiful – Christina Aguilera',
+    'Go on and try to tear me down. I will be rising from the ground Skyscraper – Demi Lovato',
+    'Don’t stop believin’. Hold on to the feelin Don’t Stop Believing – Journey',
+    'What doesn’t kill you makes a fighter Stronger – Kelly Clarkson "What Doesn’t Kill You"',
+    'Only know you\'ve been high when you\'re feeling low Only hate the road when you\'re missing home Let Her Go - Passenger',
+    'God, tell us the reason youth is wasted on the young It\'s hunting season and the lambs are on the run Searching for meaning But are we all lost stars, trying to light up the dark? - Adam Levine “Lost Stars”',
+    'If I go there\'s just no telling how far I\'ll go - Alessia Cara',
+    'Dedicate yourself and you gonna find yourself Standing in the hall of fame. And the world\'s gonna know your name. Cause you burn with the brightest flame - The Script "Hall of Fame"'
+  ];
+
+  var arr3 = [
+    'What do you call a group of farmers stuck at one place? KISSAN JAM',
+    'Once a Daku tied a Mangalsutra to his Gun, and then suddenly everyone started worshipping him!!!Because he became Gun-Pati',
+    'Why does the BAA of “Kyunki Saas Bhi Kabhi Bahu Thi” never die? Because God Never Dies… Why? BAA “KHUDA” TUMHI HO…',
+    '12.9999999999 - Which song is this? Tera hone laga soon',
+    'Agar Jackie Chan Ki Mother-In-Law Kidnap Ho Jaaye, Toh Usey Waapis Kaun Laayega??? Vicks VapoRub!!! Because… Vicks Lautaaye Chain Ki Saas!!!',
+    'What is the cube of 13? Suroor Because Tera*tera*tera = suroor',
+    'Agar 2 Peepal Ke Ped Ko Rassi Se Baandh Diya Jaaye, Toh Uss Rassi Ko Kya Kahenge??? Nokia because connecting peepal',
+    'If someone has pure black eyes, then what will we call that person? We will call him ‘Ruru’… Because Ye Kaali Kaali Aankhein, Tu Ruru, Tu Ruru…',
+    'How would you calculate the volume of a person who has lost his memory completely??? 1/3 pi r*r*h because he would repeatedly say “Main CONE hoon”',
+    '3+3 = 8. How? Galti se'
+  ];
+
+  var arr4 = [
+    '23% of all photocopier faults worldwide are caused by people sitting on them and photocopying their butts',
+    'The medical name for butt crack is “intergluteal cleft”',
+    'In morse code, -.- means k',
+    'By law, a pregnant woman can pee anywhere she wants to in Britain, even if she chooses, in a police officer’s helmets',
+    'The butterflies you get in your stomach when you see me is actually a stress response caused by adrenaline',
+    'The Spanish national anthem has no words',
+    'You can’t hum while holding your nose closed',
+    'Ketchup was sold in the 1830s as medicine',
+    'Blue whale fart bubbles are large enough to enclose a horse',
+    'If two pieces of the same type of metal touch in outer space, they will bond together permanently',
+    'The infinity sign is called a lemniscate',
+    'Only half a dolphin brain falls asleep at a time',
+    'Rowan Atkinson is the voice behind the bird Zazu in Lion King',
+  ];
+
+  var arr5 = [
+    'You\'re my Duke & I\'m your Contessa',
+    '"I think I am deeply in love with you" - a random Chu',
+    '*gets into a deep romantic gaze*....chutiya kid in front of Theos spoils it',
+    'Sleeping off on call with you is the best feeling ever &#10084;&#65039;',
+    'See the number on top. Hasn\'t become a moment yet, but will very soon &#x1F609;',
+    '"You feel like home"...one where my other needs are met too xD',
+    'Remember the animal that attacked you and left a mark on your neck? He\'s still hungry for more. RAWR',
+    'WE make the best team and WE always win :D',
+    'Fun Fact: Since this is Moment #9 I should tell you, my favourite number is 9 :p',
+    'Tenku Tenku. Tenku Tenku',
+    'I love how you manaofy me &#10084;&#65039;',
+    'Hello, Twin Flame &#128293;',
+    'I can never keep my hands off of you',
+    'You\'re an addiction',
+    'Never blow me off for a random coffee chat, okay? &#9785;&#65039;',
+    'SUSHI GOOOOOO',
+    'Lalla Lalla Lori. Doodh ki katori. Doodh mein bataasha. Ishu kare tamasha',
+    'MBF &#10084;&#65039;',
+    'Let\'s never stop being cute together',
+    'This sunglasses waala bhoot looooooves you &#128526;',
+    'Hey there, someone\'s got a NICE ASS &#128527;',
+    'Did this make you melt?',
+    'Remember the beard burn?',
+    'I wanna cuddle with you. We fit perfectly together &#10084;&#65039;',
+    'You make me wanna do corny shit',
+    'You make me so Happpppyyyyyy',
+    'Always hold my hand and give me peck while I\'m driving :)',
+    'Let\'s go make out near the door &#128536;'
+  ];
+
+  function func1() {
+    var randomNumber = Math.floor(Math.random()*arr1.length);
+    var element = arr1[randomNumber];
+
+    document.getElementById("Modal1Label").innerHTML = "Moticational Quotes: #" + (randomNumber+1);
+    document.getElementById("Modal1Content").innerHTML = element;
+  }
+
+  function func2() {
+    var randomNumber = Math.floor(Math.random()*arr2.length);
+    var element = arr2[randomNumber];
+
+    document.getElementById("Modal2Label").innerHTML = "Song Lyrics: #" + (randomNumber+1);
+    document.getElementById("Modal2Content").innerHTML = element;
+  }
+
+  function func3() {
+    var randomNumber = Math.floor(Math.random()*arr3.length);
+    var element = arr3[randomNumber];
+
+    document.getElementById("Modal3Label").innerHTML = "PJs: #" + (randomNumber+1);
+    document.getElementById("Modal3Content").innerHTML = element;
+  }
+
+  function func4() {
+    var randomNumber = Math.floor(Math.random()*arr4.length);
+    var element = arr4[randomNumber];
+
+    document.getElementById("Modal4Label").innerHTML = "Fun Facts: #" + (randomNumber+1);
+    document.getElementById("Modal4Content").innerHTML = element;
+  }
+
+  function func5() {
+    var randomNumber = Math.floor(Math.random()*arr5.length);
+    var element = arr5[randomNumber];
+
+    if(randomNumber===4) {
+      randomNumber = 68;
+    }
+
+    document.getElementById("Modal5Label").innerHTML = "Moments Together: #" + (randomNumber+1);
+    document.getElementById("Modal5Content").innerHTML = element;
+  }
+
+  function runConfetti() {
+    confetti.start();
+  }
+
+  function toggleConfetti() {
+    confetti.toggle();
+  }
+
+  function toggleMusic() {
+    togglePlay();
+  }
+  </script>
+</body>
+</html>
