@@ -115,7 +115,7 @@
     /*::::::::::::::::::::::::::::::::::::
     Preloader
     ::::::::::::::::::::::::::::::::::::*/
-    $(window).on('load', function () {
+    $('.hero-aria').ready( function () {
         $('.preloader').fadeOut();
     });
 
