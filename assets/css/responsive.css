@@ -96,10 +96,7 @@
     /*::::::::::::::::::::::::::::::::::::
        Hero Area
     ::::::::::::::::::::::::::::::::::::*/
-    .hero-aria {
-    	margin-top: 25%;
-    }
-    .hero-aria,
+
     .hero-area-slids,
     .single-slider {
         height: 600px;
@@ -116,16 +113,18 @@
     .hero-aria::after {
         width: 100%;
     }
-    .hero-content {
-        max-width: 52%;
+    .intro-section {
+        max-width: 60%;
+        margin-top: 20%;
     }
     .slider-bg {
       width: 35%;
-      height: 35%;
+      height: 25%;
       border-radius: 50%;
       float: right;
       z-index: 3;
       margin: 2%;
+      margin-top: 200px;
     }
 
     /*::::::::::::::::::::::::::::::::::::
@@ -287,9 +286,6 @@
         margin: 15px 0;
     }
 
-    .hero-aria::after {
-        width: 70%;
-    }
     .hero-content {
         max-width: 65%;
     }
